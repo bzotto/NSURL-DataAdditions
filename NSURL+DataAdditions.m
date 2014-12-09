@@ -10,7 +10,7 @@
 @implementation NSURL (DataAdditions)
 + (instancetype)URLWithData:(NSData *)data
 {
-    return [self URLWithData:data mime:@"application/octet-stream"];
+    return [self URLWithData:data mime:nil];
 }
 
 + (instancetype)URLWithData:(NSData *)data mime:(NSString *)mime
